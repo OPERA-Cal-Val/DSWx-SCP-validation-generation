@@ -1,2 +1,7 @@
 # OPERA DSWx validation data example
-staging area for my repos
+
+Demonstrates how to:
+
+    1. XX
+    2. XX
+  
