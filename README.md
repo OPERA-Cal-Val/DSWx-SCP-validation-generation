@@ -1,4 +1,4 @@
-# OPERA DSWx validation data example
+# OPERA DSWx validation data example using SCP
 
 Demonstrates how to:
 
