@@ -22,3 +22,7 @@ QGIS can be installed for your platform using the binary packages provided (http
 
 We use the University of Maryland (UMD) Global Land Analysis & Discovery group (GLAD) global surface water reference maps to select validation AOIs. GLAD derived surface water extent validation data from 5 m pixel RapidEye imagery between 2010-2013 (https://glad.umd.edu/dataset/global-surface-water-dynamics). 
 
+
+### AOI 4_42
+
+![UMD_GLAD_CHIP](https://user-images.githubusercontent.com/29788365/175829543-87881342-a8af-4d54-a642-c9cba06de068.jpg)
