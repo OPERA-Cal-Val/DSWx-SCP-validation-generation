@@ -17,3 +17,8 @@ QGIS can be installed for your platform using the binary packages provided (http
 ## Image classification workflow
 
 ![flowchart](https://user-images.githubusercontent.com/29788365/175801911-e99a12d0-5344-43ff-afdf-07ad3082aeca.jpg)
+
+## Valiadation data AOIs
+
+We use the University of Maryland (UMD) Global Land Analysis & Discovery group (GLAD) global surface water reference maps to select validation AOIs. GLAD derived surface water extent validation data from 5 m pixel RapidEye imagery between 2010-2013 (https://glad.umd.edu/dataset/global-surface-water-dynamics). 
+
