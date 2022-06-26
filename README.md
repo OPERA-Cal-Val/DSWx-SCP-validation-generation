@@ -2,8 +2,8 @@
 
 Demonstrates how to:
 
-    1. XX
-    2. XX
+    1. Classify satellite optical imagery to identify water/non-water areas
+    2. Generate validation data for the OPERA DSWx product
   
 ## Required software and plugins
 
