@@ -39,3 +39,7 @@ Below we walk through the steps to generate validation data. We select AOI (4_42
 </p>
 
 ### PlanetScope Imagery (8band) acquired on 2021-09-24
+
+![Planet_FalseColor](https://user-images.githubusercontent.com/29788365/176040878-d8fdcaf2-74d3-4f93-9216-3aeac5ce0935.jpg)
+
+
