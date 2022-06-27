@@ -24,7 +24,7 @@ We use the University of Maryland (UMD) Global Land Analysis & Discovery group (
 
 ![UMDgladlocation3](https://user-images.githubusercontent.com/29788365/175997936-e417a966-22c4-4115-8583-90c7ee0cf8f3.png)
 
-Figure 1. Location of the UMD GLAD surface water extent validation data. Black symbol shows location of validation data shown below.
+Figure 1. Location of the UMD GLAD surface water extent validation data. Black symbol shows location of validation data shown below. Background map from ESRI.
 
 
 ## Validation data example 
