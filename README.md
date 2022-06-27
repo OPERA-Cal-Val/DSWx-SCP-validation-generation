@@ -37,6 +37,7 @@ Below we walk through the steps to generate validation data. We select AOI (4_42
 <p align="center">
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg">
 </p>
+Figure 2. UMD GLAD surface water extent.
 
 ### PlanetScope Imagery (8band) acquired on 2021-09-24
 
@@ -45,7 +46,7 @@ Below we walk through the steps to generate validation data. We select AOI (4_42
 <p align="center">
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg">
 </p>
-Figure 2. Falsecolor PlanetScope imagery for AOI.
+Figure 3. Falsecolor PlanetScope imagery for AOI.
 <br />
 <br />
 
@@ -53,7 +54,7 @@ Next we perform undersupervised classification with SCP to get a understanding o
 
 
 ![isodata_Table](https://user-images.githubusercontent.com/29788365/176042664-1c50f7fc-b4c1-4240-a52c-ec0d08baa471.png)
-Figure 3. SCP clustering table showing parameters used for this undersupervised classification. 
+Figure 4. SCP clustering table showing parameters used for this undersupervised classification. 
 <br />
 <br />
 SCP returns a classified image that identifies water and land with different classes.
