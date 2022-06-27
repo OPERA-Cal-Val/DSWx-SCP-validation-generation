@@ -29,6 +29,7 @@ Figure 1. Location of the UMD GLAD surface water extent validation data. Black s
 
 ## Validation data example 
 
+### UMD GLAD data to select AOI
 Below we walk through the steps to generate validation data. We select AOI (4_42) from the UMD GLAD dataset. This corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
 
 <!-- ![UMD_GLAD_CHIP](https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg) -->
@@ -37,3 +38,4 @@ Below we walk through the steps to generate validation data. We select AOI (4_42
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg">
 </p>
 
+### PlanetScope Imagery (8band) acquired on 2021-09-24
