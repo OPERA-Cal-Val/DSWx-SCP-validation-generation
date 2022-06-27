@@ -39,7 +39,7 @@ Below we walk through the steps to generate validation data. We select AOI (4_42
 </p>
 Figure 2. UMD GLAD surface water extent.
 
-### PlanetScope Imagery (8band) acquired on 2021-09-24
+### PlanetScope Imagery (8band)
 
 <!-- ![Planet_FalseColor](https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg) -->
 
