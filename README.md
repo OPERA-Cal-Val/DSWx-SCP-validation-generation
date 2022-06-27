@@ -24,12 +24,12 @@ We use the University of Maryland (UMD) Global Land Analysis & Discovery group (
 
 ![UMDgladlocation3](https://user-images.githubusercontent.com/29788365/175997936-e417a966-22c4-4115-8583-90c7ee0cf8f3.png)
 
-Above image shows the location of the UMD GLAD surface water extent validation data. Black symbol shows location of validation data shown below.
+Figure 1. Location of the UMD GLAD surface water extent validation data. Black symbol shows location of validation data shown below.
 
 
 ## Validation data example 
 
-Below we walk through the steps to generate validation data. We select AOI (4_42) from the UMD GLAD dataset. This corresponds to a region of northern Australia that contains surface water and ocean water.
+Below we walk through the steps to generate validation data. We select AOI (4_42) from the UMD GLAD dataset. This corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
 
 <!-- ![UMD_GLAD_CHIP](https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg) -->
 
