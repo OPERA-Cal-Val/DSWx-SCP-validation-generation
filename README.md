@@ -46,11 +46,16 @@ Below we walk through the steps to generate validation data. We select AOI (4_42
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg">
 </p>
 Figure 2. Falsecolor PlanetScope imagery for AOI.
+<br />
+<br />
 
 Next we perform undersupervised classification with SCP to get a understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters. 
+
+
 ![isodata_Table](https://user-images.githubusercontent.com/29788365/176042664-1c50f7fc-b4c1-4240-a52c-ec0d08baa471.png)
 Figure 3. SCP clustering table showing parameters used for this undersupervised classification. 
-
+<br />
+<br />
 SCP returns a classified image that identifies water and land with different classes.
 
 
