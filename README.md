@@ -39,14 +39,14 @@ Figure 1. Location of the UMD GLAD surface water extent validation data. Black s
 
 ## Validation data example 
 
-Below we walk through the steps to generate validation data. We selected an AOI (chip 4_42) from the UMD GLAD dataset. Chip 4_42 corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
+Below we walk through the steps to generate validation data. We selected an AOI (SAMPLE_ID 4_42) from the UMD GLAD dataset. SAMPLE_ID 4_42 corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
 
 <!-- ![UMD_GLAD_CHIP](https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg) -->
 
 <p align="center">
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg">
 </p>
-Figure 2. UMD GLAD surface water extent for chip 4_42. Classified image was made from RapidEye imagery acquired on 2012-04-24.
+Figure 2. UMD GLAD surface water extent for SAMPLE_ID 4_42. Classified image was made from RapidEye imagery acquired on 2012-04-24.
 
 <br />
 <br />
