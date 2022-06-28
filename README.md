@@ -73,10 +73,11 @@ Figure 5. ISODATA classification of PlanetScope image with 10 classes.
 ### Supervised Classification 
 We then use both the classified image and original PlanetScope image to create training data for supervised classification. Our training data consited of hand drawn labels for water and no water.
 
-<!-- ![training2](https://user-images.githubusercontent.com/29788365/176068431-bea98279-1411-4e8f-806d-fd93d0c85f21.jpg)  -->
+<!--![train3](https://user-images.githubusercontent.com/29788365/176083851-364be0a9-7511-4ed9-b733-68fa836d4ea9.jpg) -->
+
 
 <p align="center">
-  <img width="105%" height="105%" src="https://user-images.githubusercontent.com/29788365/176068431-bea98279-1411-4e8f-806d-fd93d0c85f21.jpg">
+  <img width="105%" height="105%" src="https://user-images.githubusercontent.com/29788365/176083851-364be0a9-7511-4ed9-b733-68fa836d4ea9.jpg">
 </p>
 Figure 6. Side by side comparison of false color image and classified image showing the locations of training data.
 <br />
@@ -99,3 +100,8 @@ Figure 8. Supervised (min. distance) classification of PlanetScope image with wa
 <br />
 <br />
 
+If the supervised classificaiton result is poor, we recommend generating new training data and re-running the classificaition process. It sometimes takes several iterations to develop a reliable training dataset.
+
+#### Let's zoom in
+
+To get a sense of classification error, we zoom into a small region.
