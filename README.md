@@ -105,3 +105,6 @@ If the supervised classificaiton result is poor, we recommend generating new tra
 #### Let's zoom in
 
 To get a sense of classification error, we zoom into a small region.
+
+![zoomInCompare](https://user-images.githubusercontent.com/29788365/176087299-3def22fe-dfcf-4f99-a131-0098dfb02a68.jpg)
+
