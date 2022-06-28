@@ -76,7 +76,7 @@ Figure 5. ISODATA classification of PlanetScope image with 10 classes.
 <br />
 
 ### Supervised Classification 
-We then use both the classified image and original PlanetScope image to create training data for supervised classification. Our training data consited of hand drawn labels for water and no water.
+We then use both the classified image and original PlanetScope image to create training data for supervised classification. Our training data consisted of hand drawn labels for water and no water.
 
 <!--![train3](https://user-images.githubusercontent.com/29788365/176083851-364be0a9-7511-4ed9-b733-68fa836d4ea9.jpg) -->
 
