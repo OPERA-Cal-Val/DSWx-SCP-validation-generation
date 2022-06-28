@@ -21,10 +21,14 @@ QGIS can be installed for your platform using the binary packages provided (http
 
 We use the University of Maryland (UMD) Global Land Analysis & Discovery group (GLAD) global surface water reference maps to select validation AOIs. GLAD derived surface water extent validation data from 5 m pixel RapidEye imagery between 2010-2013 (https://glad.umd.edu/dataset/global-surface-water-dynamics). 
 
-![UMDgladlocation3](https://user-images.githubusercontent.com/29788365/175997936-e417a966-22c4-4115-8583-90c7ee0cf8f3.png)
+<!-- ![UMDgladlocation3](https://user-images.githubusercontent.com/29788365/175997936-e417a966-22c4-4115-8583-90c7ee0cf8f3.png) -->
 
+<p align="center">
+  <img width="85%" height="85%" src="https://user-images.githubusercontent.com/29788365/175997936-e417a966-22c4-4115-8583-90c7ee0cf8f3.png">
+</p>
 Figure 1. Location of the UMD GLAD surface water extent validation data. Black symbol shows location of validation data shown below. Background map from ESRI.
-
+<br />
+<br />
 
 ## Validation data example 
 
@@ -41,7 +45,8 @@ Figure 2. UMD GLAD surface water extent for chip 4_42. Classified image was made
 <br />
 <br />
 Next, we co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product. A notebook for Planet and HLS co-location are located here: https://github.com/OPERA-Cal-Val/calval-DSWx/blob/main/planet_api/Collocation2geojson.ipynb. We found a coincedent image acquired on 2021-09-24.
-
+<br />
+<br />
 <!-- ![Planet_FalseColor](https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg) -->
 
 <p align="center">
