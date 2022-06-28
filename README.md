@@ -2,8 +2,7 @@
 
 Demonstrates how to:
 
-    1. Classify satellite optical imagery to identify water/non-water areas
-    2. Generate validation data for the OPERA DSWx product
+    Generate validation data for the OPERA DSWx product
   
 ## Required software and plugins
 
@@ -41,7 +40,7 @@ Figure 2. UMD GLAD surface water extent for chip 4_42. Classified image was made
 <br />
 <br />
 <br />
-Next, we co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product. We found a coincedent image acquired on 2021-09-24.
+Next, we co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product. A notebook for Planet and HLS co-location are located here: https://github.com/OPERA-Cal-Val/calval-DSWx/blob/main/planet_api/Collocation2geojson.ipynb. We found a coincedent image acquired on 2021-09-24.
 
 <!-- ![Planet_FalseColor](https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg) -->
 
@@ -53,14 +52,14 @@ Figure 3. False color PlanetScope imagery for AOI.
 <br />
 
 ### Unsupervised Classification 
-The next step is to peform unsupervised classification with SCP to gain an understanding of the different spectral characteristics of the imagery. We used the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters (Figure 4). For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
+The next step is to peform unsupervised classification with SCP. We use unsupervised classification to gain a better understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters (Figure 4). Other methods such as k-means are also acceptable. For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
 
 ![isodata_Table](https://user-images.githubusercontent.com/29788365/176042664-1c50f7fc-b4c1-4240-a52c-ec0d08baa471.png)
 Figure 4. SCP clustering table showing parameters used for this undersupervised classification. 
 <br />
 <br />
 
-The classified PlanetScope image helps differentiate water and non-water regions. Visual inspection of the classified image and the false color optical image shows surface water in the form of channel networks near the shoreline.
+The classified PlanetScope image helps differentiate water and no water regions. Visual inspection of the classified image and the false color optical image shows surface water in the form of channel networks near the shoreline.
 
 <!-- ![isoddata](https://user-images.githubusercontent.com/29788365/176062184-814142dd-d794-43c7-a91e-8577405ef60f.jpg) -->
 
@@ -72,14 +71,31 @@ Figure 5. ISODATA classification of PlanetScope image with 10 classes.
 <br />
 
 ### Supervised Classification 
-We then used both the classified and original PlanetScope image to create training data for supervised classification. Our training data consited of hand drawn labels for water/no water.
-
+We then use both the classified image and original PlanetScope image to create training data for supervised classification. Our training data consited of hand drawn labels for water and no water.
 
 <!-- ![training2](https://user-images.githubusercontent.com/29788365/176068431-bea98279-1411-4e8f-806d-fd93d0c85f21.jpg)  -->
 
 <p align="center">
   <img width="105%" height="105%" src="https://user-images.githubusercontent.com/29788365/176068431-bea98279-1411-4e8f-806d-fd93d0c85f21.jpg">
 </p>
-Figure 6. T
+Figure 6. Side by side comparison of false color image and classified image showing the locations of training data.
 <br />
 <br />
+
+These training data are then used for performing supervised classification (Minimum Distance, Maximum Likelihood, Spectral Angle Mapping, or Random Forest). More details are found here: https://fromgistors.blogspot.com/p/user-manual.html. Below we show an example of using the minimum distance method to classify the PlanetScope imagery.
+
+We apply the minimum distance algorithm with SCP using the default parameters.
+![min_distance screen grab](https://user-images.githubusercontent.com/29788365/176080935-6b5b18ca-e589-40ba-b1ec-2b8c7ff5abc7.png)
+Figure 7. SCP classifictation table showing parameters used for supervised classification. 
+<br />
+<br />
+
+<!-- ![minDist](https://user-images.githubusercontent.com/29788365/176081596-b8588f94-a496-4f8d-a44e-7557e214c410.jpg)  -->
+
+<p align="center">
+  <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/176081596-b8588f94-a496-4f8d-a44e-7557e214c410.jpg">
+</p>
+Figure 8. Supervised (min. distance) classification of PlanetScope image with water and no water classes. 
+<br />
+<br />
+
