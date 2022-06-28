@@ -29,35 +29,38 @@ Figure 1. Location of the UMD GLAD surface water extent validation data. Black s
 
 ## Validation data example 
 
-Below we walk through the steps to generate validation data. We selected an AOI (chip 4_42) from the UMD GLAD dataset.  Chip 4_42 corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
+Below we walk through the steps to generate validation data. We selected an AOI (chip 4_42) from the UMD GLAD dataset. Chip 4_42 corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
 
 <!-- ![UMD_GLAD_CHIP](https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg) -->
 
 <p align="center">
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg">
 </p>
-Figure 2. UMD GLAD surface water extent. This classified image was made using RapidEye imagery acquired on 2012-04-24.
+Figure 2. UMD GLAD surface water extent for chip 4_42. Classified image was made from RapidEye imagery acquired on 2012-04-24.
 
 <br />
-We then co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product, which will eventually be used to create DSWx-HLS. We found there was a PlanetScope and HLS image acquired on 2021-09-24.
+<br />
+<br />
+Next, we co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product. We found a coincedent image acquired on 2021-09-24.
 
 <!-- ![Planet_FalseColor](https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg) -->
 
 <p align="center">
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg">
 </p>
-Figure 3. Falsecolor PlanetScope imagery for AOI.
+Figure 3. False color PlanetScope imagery for AOI.
 <br />
 <br />
 
-Next we perform unersupervised classification with SCP to get a understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters. For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
-
+### Unsupervised Classification 
+The next step is to peform unsupervised classification with SCP to gain an understanding of the different spectral characteristics of the imagery. We used the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters (Figure 4). For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
 
 ![isodata_Table](https://user-images.githubusercontent.com/29788365/176042664-1c50f7fc-b4c1-4240-a52c-ec0d08baa471.png)
 Figure 4. SCP clustering table showing parameters used for this undersupervised classification. 
 <br />
 <br />
-SCP returns a classified image that can be used to differentiate water and non-water regions. We use the unsupervised classification as a guide to better understand the spectral characteristics of the imagery in addition to visual inspection. 
+
+The classified PlanetScope image helps differentiate water and non-water regions. Visual inspection of the classified image and the false color optical image shows surface water in the form of channel networks near the shoreline.
 
 <!-- ![isoddata](https://user-images.githubusercontent.com/29788365/176062184-814142dd-d794-43c7-a91e-8577405ef60f.jpg) -->
 
@@ -68,8 +71,10 @@ Figure 5. ISODATA classification of PlanetScope image with 10 classes.
 <br />
 <br />
 
+### Supervised Classification 
+We then used both the classified and original PlanetScope image to create training data for supervised classification. Our training data consited of hand drawn labels for water/no water.
 
-
+![training](https://user-images.githubusercontent.com/29788365/176068212-5de7900d-dd55-4c72-a7e5-3f8888eba0de.jpg)
 
 
 
