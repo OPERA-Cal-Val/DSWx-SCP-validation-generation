@@ -57,7 +57,10 @@ Next we perform undersupervised classification with SCP to get a understanding o
 Figure 4. SCP clustering table showing parameters used for this undersupervised classification. 
 <br />
 <br />
-SCP returns a classified image that identifies water and land with different classes.
+SCP returns a classified image that can be used to differentiate water and non-water regions. We use the unsupervised classification as a guide to better understand the spectral characteristics of the imagery in addition to visual inspection. 
+
+![isoddata](https://user-images.githubusercontent.com/29788365/176062184-814142dd-d794-43c7-a91e-8577405ef60f.jpg)
+
 
 
 
