@@ -29,17 +29,17 @@ Figure 1. Location of the UMD GLAD surface water extent validation data. Black s
 
 ## Validation data example 
 
-### UMD GLAD data to select AOI
-Below we walk through the steps to generate validation data. We select AOI (4_42) from the UMD GLAD dataset. This corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
+Below we walk through the steps to generate validation data. We selected an AOI (chip 4_42) from the UMD GLAD dataset.  Chip 4_42 corresponds to a region of northern Australia that contains surface water and ocean water (see location in Figure 1).
 
 <!-- ![UMD_GLAD_CHIP](https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg) -->
 
 <p align="center">
   <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/175831036-1cc9f0b1-39fe-493f-b0c0-4d9a77119da4.jpg">
 </p>
-Figure 2. UMD GLAD surface water extent.
+Figure 2. UMD GLAD surface water extent. This classified image was made using RapidEye imagery acquired on 2012-04-24.
 
-### PlanetScope Imagery (8band)
+<br />
+We then co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product, which will eventually be used to create DSWx-HLS. We found there was a PlanetScope and HLS image acquired on 2021-09-24.
 
 <!-- ![Planet_FalseColor](https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg) -->
 
@@ -50,7 +50,7 @@ Figure 3. Falsecolor PlanetScope imagery for AOI.
 <br />
 <br />
 
-Next we perform undersupervised classification with SCP to get a understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters. 
+Next we perform unersupervised classification with SCP to get a understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters. For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
 
 
 ![isodata_Table](https://user-images.githubusercontent.com/29788365/176042664-1c50f7fc-b4c1-4240-a52c-ec0d08baa471.png)
@@ -59,9 +59,14 @@ Figure 4. SCP clustering table showing parameters used for this undersupervised 
 <br />
 SCP returns a classified image that can be used to differentiate water and non-water regions. We use the unsupervised classification as a guide to better understand the spectral characteristics of the imagery in addition to visual inspection. 
 
-![isoddata](https://user-images.githubusercontent.com/29788365/176062184-814142dd-d794-43c7-a91e-8577405ef60f.jpg)
+<!-- ![isoddata](https://user-images.githubusercontent.com/29788365/176062184-814142dd-d794-43c7-a91e-8577405ef60f.jpg) -->
 
-
+<p align="center">
+  <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/176062184-814142dd-d794-43c7-a91e-8577405ef60f.jpg">
+</p>
+Figure 5. ISODATA classification of PlanetScope image with 10 classes. 
+<br />
+<br />
 
 
 
