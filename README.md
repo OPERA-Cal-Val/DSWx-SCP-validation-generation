@@ -13,13 +13,20 @@ Demonstrates how to:
 
 QGIS can be installed using the binary packages provided (https://www.qgis.org/en/site/forusers/download.html) or via package managers such as conda (https://anaconda.org/conda-forge/qgis). SCP is installed using the QGIS Plugin manager (https://fromgistors.blogspot.com/p/plugin-installation2.html). SNAP can be installed using the latest installers (https://step.esa.int/main/download/snap-download/). Note that SNAP is only needed to run Random Forest classification with SCP.
 
+## Required data
+
+    1. University of Maryland (UMD) Global Land Analysis and Discovery (GLAD) global surface water reference maps
+    2. PlanetScope Imagery 
+
+UMD GLAD surface water extent validation data are derived from 5 m pixel RapidEye imagery between 2010-2013 (https://glad.umd.edu/dataset/global-surface-water-dynamics). PlanetScope imagery are commerical data and can be accessed through the NASA Commercial Smallsat Data Acquisition Program (https://csdap.earthdata.nasa.gov/signup/) or through the Planet Education and Research Program (https://www.planet.com/markets/education-and-research/).
+ 
 ## Image classification workflow
 
 ![flowchart](https://user-images.githubusercontent.com/29788365/175801911-e99a12d0-5344-43ff-afdf-07ad3082aeca.jpg)
 
 ## Valiadation data AOIs
 
-We use the University of Maryland (UMD) Global Land Analysis & Discovery group (GLAD) global surface water reference maps to select validation AOIs (Area of Interest). GLAD derived surface water extent validation data from 5 m pixel RapidEye imagery between 2010-2013 (https://glad.umd.edu/dataset/global-surface-water-dynamics). 
+We use the UMD GLAD global surface water reference maps to select validation AOIs (Area of Interest). 
 
 <!-- ![UMDgladlocation3](https://user-images.githubusercontent.com/29788365/175997936-e417a966-22c4-4115-8583-90c7ee0cf8f3.png) -->
 
