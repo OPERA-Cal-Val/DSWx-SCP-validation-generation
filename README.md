@@ -60,7 +60,7 @@ Figure 3. False color PlanetScope imagery for AOI.
 The next step is to peform unsupervised classification with SCP. We use unsupervised classification to gain a better understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters (Figure 4). Other methods such as k-means are also acceptable. For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
 
 ![isodata_Table](https://user-images.githubusercontent.com/29788365/176042664-1c50f7fc-b4c1-4240-a52c-ec0d08baa471.png)
-Figure 4. SCP clustering table showing parameters used for this undersupervised classification. 
+Figure 4. SCP clustering table showing parameters used for this unsupervised classification. 
 <br />
 <br />
 
