@@ -16,8 +16,8 @@ Demonstrates how to:
 
 ## Required software and plugins
 
-    1. QGIS
-    2. Semi-Automatic Classification Plugin (SCP)
+    1. QGIS (v3.16)
+    2. Semi-Automatic Classification Plugin (SCP) (v7.10.6)
     3. SNAP
         
 
