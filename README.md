@@ -13,12 +13,13 @@ Demonstrates how to:
 5. [Validation data example](#validation-data-example)
     -   [Unsupervised Classification](#unsupervised-classification)
     -   [Supervised Classification](#supervised-classification)
-
+    -   [Accuracy Assessment](#accuracy-assessment)
+6. [Contributors](#contributors)
 ## Required software and plugins
 
     1. QGIS (v3.16)
     2. Semi-Automatic Classification Plugin (SCP) (v7.10.6)
-    3. SNAP
+    3. SNAP (v8.0)
         
 
 QGIS can be installed using the binary packages provided (https://www.qgis.org/en/site/forusers/download.html) or via package managers such as conda (https://anaconda.org/conda-forge/qgis). SCP is installed using the QGIS Plugin manager (https://fromgistors.blogspot.com/p/plugin-installation2.html). SNAP can be installed using the latest installers (https://step.esa.int/main/download/snap-download/). Note that SNAP is only needed to run Random Forest classification with SCP.
@@ -133,3 +134,13 @@ To get a sense of classification error, we zoom into a small region in the north
 ### Accuracy Assessment  
 
 TBD
+
+## Contributors
+
+    Alexander Handwerger
+    Charlie Marshak
+    Grace Bato
+    John Jones
+    Matt Bonnema
+    Simran Sangha
+
