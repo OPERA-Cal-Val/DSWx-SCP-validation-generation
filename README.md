@@ -2,7 +2,7 @@
 
 Demonstrates how to:
 
-    Generate validation data for the OPERA DSWx product
+    Generate validation data for the OPERA DSWx product. The OPERA DSWx validation data will be freely available.
   
 ## Required software and plugins
 
