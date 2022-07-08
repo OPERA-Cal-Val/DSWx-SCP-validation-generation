@@ -9,7 +9,7 @@ Demonstrates how to:
 1. [Required Software and Plugins](#required-software-and-plugins)
 2. [Required Data](#required-data)
 3. [Image classification workflow](#image-classification-workflow)
-4. [Valiadation data AOIs](#valiadation data-aois)
+4. [Valiadation data AOIs](#valiadation-data-aois)
 5. [Validation data example](#validation-data-example)
     -   [Unsupervised Classification](#unsupervised-classification)
     -   [Supervised Classification](#supervised-classification)
