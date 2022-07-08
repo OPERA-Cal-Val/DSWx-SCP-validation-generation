@@ -1,4 +1,4 @@
-# OPERA DSWx validation data using SCP (example)
+# OPERA DSWx validation data using Semi-Automatic Classification Plugin (example)
 
 Demonstrates how to:
 
