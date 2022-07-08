@@ -15,8 +15,8 @@ QGIS can be installed using the binary packages provided (https://www.qgis.org/e
 
 ## Required data
 
-    1. University of Maryland (UMD) Global Land Analysis and Discovery (GLAD) global surface water reference maps
-    2. PlanetScope Imagery 
+    1. University of Maryland (UMD) Global Land Analysis and Discovery (GLAD) global surface water reference maps (open access)
+    2. PlanetScope Imagery (see below for access)
 
 UMD GLAD surface water extent validation data are derived from 5 m pixel RapidEye imagery between 2010-2013 (https://glad.umd.edu/dataset/global-surface-water-dynamics). PlanetScope imagery are commerical data and can be accessed through the NASA Commercial Smallsat Data Acquisition Program (https://csdap.earthdata.nasa.gov/signup/) or through the Planet Education and Research Program (https://www.planet.com/markets/education-and-research/).
  
