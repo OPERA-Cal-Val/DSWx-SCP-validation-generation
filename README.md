@@ -1,4 +1,4 @@
-# OPERA DSWx validation data using Semi-Automatic Classification Plugin (example)
+# OPERA DSWx validation data using Semi-Automatic Classification Plugin in QGIS (example)
 
 Demonstrates how to:
 
