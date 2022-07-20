@@ -116,8 +116,11 @@ Figure 7. SCP classifictation table showing parameters used for supervised class
 
 <!-- ![minDist](https://user-images.githubusercontent.com/29788365/176081596-b8588f94-a496-4f8d-a44e-7557e214c410.jpg)  -->
 
+<!--![Class_editedFixed](https://user-images.githubusercontent.com/29788365/180098652-1ccb724f-ed5d-471e-82e8-37481aa97d77.png) -->
+
+
 <p align="center">
-  <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/176081596-b8588f94-a496-4f8d-a44e-7557e214c410.jpg">
+  <img width="65%" height="65%" src="https://user-images.githubusercontent.com/29788365/180098652-1ccb724f-ed5d-471e-82e8-37481aa97d77.png">
 </p>
 Figure 8. Supervised classification (min. distance) of PlanetScope image with water and no water classes. 
 <br />
