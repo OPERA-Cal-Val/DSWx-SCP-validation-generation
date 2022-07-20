@@ -35,7 +35,7 @@ UMD GLAD surface water extent validation data are derived from 5 m pixel RapidEy
 
 ![flowchart](https://user-images.githubusercontent.com/29788365/175801911-e99a12d0-5344-43ff-afdf-07ad3082aeca.jpg)
 
-## Valiadation data AOIs
+## Validation data AOIs
 
 We use the UMD GLAD global surface water reference maps to select validation AOIs (Area of Interest). 
 
@@ -62,7 +62,7 @@ Figure 2. UMD GLAD surface water extent for SAMPLE_ID 4_42. Classified image was
 <br />
 <br />
 <br />
-Next, we co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product. A notebook for Planet and HLS co-location are located here: https://github.com/OPERA-Cal-Val/calval-DSWx/blob/main/planet_api/Collocation2geojson.ipynb. We found a coincedent image acquired on 2021-09-24.
+Next, we co-located a PlanetScope image acquired on the same day as a NASA Harmonized Landsat Sentinel-2 (HLS) product. A notebook for Planet and HLS co-location are located here: https://github.com/OPERA-Cal-Val/calval-DSWx/blob/main/planet_api/Collocation2geojson.ipynb. We found a coincident image acquired on 2021-09-24.
 <br />
 <br />
 <!-- ![Planet_FalseColor](https://user-images.githubusercontent.com/29788365/176041457-1e4d8cf7-009a-4e5c-8a89-27f260cdc9ab.jpg) -->
@@ -75,7 +75,7 @@ Figure 3. False color PlanetScope imagery for AOI.
 <br />
 
 ### Unsupervised Classification 
-The next step is to peform unsupervised classification with SCP. We use unsupervised classification to gain a better understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters (Figure 4). Other methods such as k-means are also acceptable. For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
+The next step is to perform unsupervised classification with SCP. We use unsupervised classification to gain a better understanding of the different spectral characteristics of the imagery. We use the ISODATA approach (https://semiautomaticclassificationmanual.readthedocs.io/en/latest/remote_sensing.html#isodata-definition) with 10 classes and default parameters (Figure 4). Other methods such as k-means are also acceptable. For more information we recommend following the "Unsupervised Classification using the Semi-Automatic Classification Plugin version 7" tutorial (https://fromgistors.blogspot.com/search/label/Tutorial). 
 
 ![isodata_Table](https://user-images.githubusercontent.com/29788365/176042664-1c50f7fc-b4c1-4240-a52c-ec0d08baa471.png)
 Figure 4. SCP clustering table showing parameters used for this unsupervised classification. 
@@ -110,7 +110,7 @@ These training data are then used for performing supervised classification (Mini
 
 We apply the minimum distance algorithm with SCP using the default parameters.
 ![min_distance screen grab](https://user-images.githubusercontent.com/29788365/176080935-6b5b18ca-e589-40ba-b1ec-2b8c7ff5abc7.png)
-Figure 7. SCP classifictation table showing parameters used for supervised classification. 
+Figure 7. SCP classification table showing parameters used for supervised classification. 
 <br />
 <br />
 
@@ -128,20 +128,27 @@ Figure 8. Supervised classification (min. distance) of PlanetScope image with wa
 <br />
 <br />
 
-If the supervised classificaiton result is poor, we recommend generating new training data and re-running the classificaition process. It sometimes takes several iterations to develop a reliable training dataset.
+If the supervised classification result is poor, we recommend generating new training data and re-running the classification process. It sometimes takes several iterations to develop a reliable training dataset.
 
 #### Let's zoom in
 
 To get a sense of classification error, we zoom into a small region in the northwest region of the AOI.
+
 ![3zoomnotedited](https://user-images.githubusercontent.com/29788365/180100529-3c0b5551-915b-4a67-a1a2-f9146424d017.png)
 
-Figure 9. Zoom in of image, unsupervised classification (ISODATA), and supervised classification (min. distance). 
+Figure 9. Zoom in of PlanetScope image (false color), unsupervised classification (ISODATA), and supervised classification (min. distance). 
 <br />
 <br />
 
 ### Accuracy Assessment  
 
-TBD
+Our workflow provides a classified image that overall captures the water and no water regions, however there are areas with incorrect classifications. In other words, there are areas where the supervised classification labeled water as not water and not water as water. A close examination of the zoomed in images shows parts of the channel network are missing and there is some land (wet vegetation) classified as water.
+
+![zoomin_w_edits](https://user-images.githubusercontent.com/29788365/180101973-db15613d-a448-4026-beb3-0bb7ef8c32e8.png)
+
+Figure 10. Zoom in of image, classified image, edited classified image
+<br />
+<br />
 
 ## Contributors
 
