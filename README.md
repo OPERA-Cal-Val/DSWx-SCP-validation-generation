@@ -133,8 +133,11 @@ If the supervised classificaiton result is poor, we recommend generating new tra
 #### Let's zoom in
 
 To get a sense of classification error, we zoom into a small region in the northwest region of the AOI.
-![zoom in compare copy](https://user-images.githubusercontent.com/29788365/180097925-5cc65d1a-2ab6-4e60-94a1-dc8008270c86.png)
+![3zoomnotedited](https://user-images.githubusercontent.com/29788365/180100529-3c0b5551-915b-4a67-a1a2-f9146424d017.png)
 
+Figure 9. Zoom in of image, unsupervised classification (ISODATA), and supervised classification (min. distance). 
+<br />
+<br />
 
 ### Accuracy Assessment  
 
