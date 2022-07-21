@@ -34,7 +34,8 @@ UMD GLAD surface water extent validation data are derived from 5 m pixel RapidEy
  
 ## Image classification workflow
 
-![flowchart](https://user-images.githubusercontent.com/29788365/175801911-e99a12d0-5344-43ff-afdf-07ad3082aeca.jpg)
+![flowchart2](https://user-images.githubusercontent.com/29788365/180252328-9ddd9e31-7a83-47b1-a977-e38eef44852a.jpg)
+
 
 ## Validation data AOIs
 
@@ -129,11 +130,9 @@ Figure 8. Supervised classification (min. distance) of PlanetScope image with wa
 <br />
 <br />
 
-If the supervised classification result is poor, we recommend generating new training data and re-running the classification process. It sometimes takes several iterations to develop a reliable training dataset.
+### Accuracy Assessment  
 
-#### Let's zoom in
-
-To get a sense of classification error, we zoom into a small region in the northwest region of the AOI.
+Our workflow provides a classified image that delineates the water and no water regions. However, there will inevitably be areas that are misclassified. In other words, there are water areas classified as not water and vice versa. To get a better sense of classification quality, we zoom into a small region in the northwest region of the AOI.
 
 ![3zoomnotedited](https://user-images.githubusercontent.com/29788365/180100529-3c0b5551-915b-4a67-a1a2-f9146424d017.png)
 
@@ -141,15 +140,15 @@ Figure 9. Zoom in of PlanetScope image (false color), unsupervised classificatio
 <br />
 <br />
 
-### Accuracy Assessment  
-
-Our workflow provides a classified image that overall captures the water and no water regions, however there are areas with incorrect classifications. In other words, there are areas where the supervised classification labeled water as not water and not water as water. A close examination of the zoomed in images shows parts of the channel network are missing and there is some land (wet vegetation) classified as water.
+Visual inspection shows that overall, the classification result is of good quality, but there are some classification errors. To improve the classification, we add additional training data and rerun the supervised classification. It sometimes takes several iterations to develop a reliable training dataset. Finally, when there are only very few classification errors remaining, it is possible to manually edit the classified raster using the Serval plugin.
 
 ![zoomin_w_edits](https://user-images.githubusercontent.com/29788365/180101973-db15613d-a448-4026-beb3-0bb7ef8c32e8.png)
 
-Figure 10. Zoom in of image, classified image, edited classified image
+Figure 10. Zoom in of image, classified image, refined and edited classified image
 <br />
 <br />
+
+There are several methods to calculate the accuracy assessment. TBD.
 
 ## Contributors
 
