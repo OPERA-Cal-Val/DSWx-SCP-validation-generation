@@ -116,9 +116,6 @@ Figure 7. SCP classification table showing parameters used for supervised classi
 <br />
 <br />
 
-
-
-
 <!-- ![Class_editedFixed](https://user-images.githubusercontent.com/29788365/180098652-1ccb724f-ed5d-471e-82e8-37481aa97d77.png)  -->
 <!--![Class_notedited](https://user-images.githubusercontent.com/29788365/180100066-00fb570d-b6c6-41f3-9b2e-bcb0597f68c9.png) -->
 
@@ -131,6 +128,8 @@ Figure 8. Supervised classification (min. distance) of PlanetScope image with wa
 <br />
 
 ### Accuracy Assessment  
+
+#### a. Visual Inspection  
 
 Our workflow provides a classified image that delineates the water and no water regions. However, there will inevitably be areas that are misclassified. In other words, there are water areas classified as not water and vice versa. To get a better sense of classification quality, we zoom into a small region in the northwest region of the AOI.
 
@@ -148,7 +147,20 @@ Figure 10. Zoom in of image, classified image, refined and edited classified ima
 <br />
 <br />
 
-There are several methods to calculate the accuracy assessment. TBD.
+#### b. Quantitative Assessment  
+
+There are several methods to calculate the accuracy assessment. Here we will use the Stratified Random Points workflow in SCP to calculate the error matrix and accuracy estimate. The full tutorial is provided here: https://fromgistors.blogspot.com/2019/09/Accuracy-Assessment-of-Land-Cover-Classification.html. We will summarize the key steps.
+
+The SCP accuracy assessment approach compares a random sample of points in which the true land cover is known to a classified image. The sample size is chosen in a way to attain a low standard error (Olofsson et al., 2014) and is calculated as 
+
+
+<p align="center">
+  <img width="21%" height="21%" src="https://user-images.githubusercontent.com/29788365/180312613-3fab8ca3-fc14-4433-ad4f-c569407e81dd.png">
+</p>
+<br />
+<br />
+
+where W<sub>i</sub> = mapped area proportion of class i, S<sub>i</sub>  = standard deviation of stratum i, S<sub>o</sub>  =  standard deviation of overall accuracy that we would like to acheive.
 
 ## Contributors
 
