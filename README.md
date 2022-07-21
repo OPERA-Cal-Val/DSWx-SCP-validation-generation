@@ -9,7 +9,7 @@ Demonstrates how to:
 1. [Required Software and Plugins](#required-software-and-plugins)
 2. [Required Data](#required-data)
 3. [Image classification workflow](#image-classification-workflow)
-4. [Valiadation data AOIs](#valiadation-data-aois)
+4. [Valiadation data AOIs](#validation-data-aois)
 5. [Validation data example](#validation-data-example)
     -   [Unsupervised Classification](#unsupervised-classification)
     -   [Supervised Classification](#supervised-classification)
@@ -158,9 +158,8 @@ The SCP accuracy assessment approach compares a random sample of points in which
   <img width="21%" height="21%" src="https://user-images.githubusercontent.com/29788365/180312613-3fab8ca3-fc14-4433-ad4f-c569407e81dd.png">
 </p>
 <br />
-<br />
 
-where W<sub>i</sub> = mapped area proportion of class i, S<sub>i</sub>  = standard deviation of stratum i, S<sub>o</sub>  =  standard deviation of overall accuracy that we would like to acheive.
+where W<sub>i</sub> = mapped area proportion of class i, S<sub>o</sub>  =  standard deviation of overall accuracy that we would like to achieve, and S<sub>i</sub>  = standard deviation of stratum i,. S<sub>i</sub> can be defined as sqrt[U<sub>i</sub>(1-U<sub>i</sub>)], where U<sub>i</sub> are conjectured values of user's accuracies.
 
 ## Contributors
 
