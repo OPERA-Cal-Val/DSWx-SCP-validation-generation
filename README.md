@@ -2,7 +2,7 @@
 
 Demonstrates how to:
 
-    Generate validation data for the OPERA DSWx product. The OPERA DSWx validation data will be freely available.
+    Generate validation data for the OPERA Dynamic Surface Water Extent (DSWx) product. This guide shows the steps that the OPERA DSWx team follows to generate validation data from PlanetScope satellite optical imagery. The validation data consists of a classified raster that labels pixels water and not water. These data are necessary to validate the OPERA DSWx products which will be made from the NASA Harmonized Landsat and Sentinel-2 (HLS) data. All OPERA DSWx validation data will be freely available.
     
 ## Contents
   
