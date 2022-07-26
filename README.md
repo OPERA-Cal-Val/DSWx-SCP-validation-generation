@@ -161,6 +161,12 @@ The SCP accuracy assessment approach compares a random sample of points in which
 
 where W<sub>i</sub> = mapped area proportion of class i, S<sub>o</sub>  =  standard deviation of overall accuracy that we would like to achieve, and S<sub>i</sub>  = standard deviation of stratum i,. S<sub>i</sub> can be defined as sqrt[U<sub>i</sub>(1-U<sub>i</sub>)], where U<sub>i</sub> are conjectured values of user's accuracies.
 
+## References
+
+Congedo, Luca, (2021). Semi-Automatic Classification Plugin: A Python tool for the download and processing of remote sensing images in QGIS. Journal of Open Source Software, 6(64), 3172, https://doi.org/10.21105/joss.03172
+
+Olofsson, P., Foody, G. M., Herold, M., Stehman, S. V., Woodcock, C. E., & Wulder, M. A. (2014). Good practices for estimating area and assessing accuracy of land change. Remote sensing of Environment, 148, 42-57. https://doi.org/10.1016/j.rse.2014.02.015
+
 ## Contributors
 
     Alexander Handwerger
