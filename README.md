@@ -167,6 +167,8 @@ Congedo, Luca, (2021). Semi-Automatic Classification Plugin: A Python tool for t
 
 Olofsson, P., Foody, G. M., Herold, M., Stehman, S. V., Woodcock, C. E., & Wulder, M. A. (2014). Good practices for estimating area and assessing accuracy of land change. Remote sensing of Environment, 148, 42-57. https://doi.org/10.1016/j.rse.2014.02.015
 
+Pickens, A.H., Hansen, M.C., Hancher, M., Stehman, S.V., Tyukavina, A., Potapov, P., Marroquin, B., Sherani, Z., 2020. Mapping and sampling to characterize global inland water dynamics from 1999 to 2018 with full Landsat time-series. Remote Sensing of Environment 243, 111792. https://doi.org/10.1016/j.rse.2020.111792
+
 ## Contributors
 
     Alexander Handwerger
